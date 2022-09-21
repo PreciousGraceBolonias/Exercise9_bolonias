@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD20P Exercise09 Bolonias</title>
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color:  rgb(139, 0, 0, .8);">
+    <!--Start Nav -->
+    <nav class="navbar navbar-expand-lg" style=" background-color: rgb(139, 0, 0, .8); ">
+        <div id="navKo" class="container-fluid py-2" style="border-bottom: 4px solid #FDDA0D;">
+
+            <img src="logo1.png" class="me-3" height="50px" width="50px" alt="logo">
+            <a class="nav-link btn btn-danger btn-outlined-danger py-2 px-2" href="gamers_hub.html" type="button">
+                Gamers Hub</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2 py-1">
+                        <a type="button" class="nav-link btn btn-danger py-2 px-4" aria-current="page"
+                            href="WD20P_Exercise09_Bolonias.html">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link btn btn-danger py-2 px-4" href="#" type="button" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">Register</a>
+                    </li>
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link btn btn-danger w-100 py-2 px-4" href="checkout.html" type="button">Cart
+                            <sup><b>3</b></sup></a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning text-warning;" type="button" data-bs-toggle="modal"
+                        data-bs-target="#searchModal">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End Nav -->
+    <!-- Carousel -->
+    <div class="container-fluid d-flex py-5" style=" background-color: rgb(139, 0, 0, .7);">
+        <div id="carouselKo" class="carousel slide" data-bs-interval="1500" data-bs-ride="carousel">
+            <!-- Indicator -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselKo" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselKo" data-bs-slide-to="1" aria-current="false"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselKo" data-bs-slide-to="2" aria-current="false"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselKo" data-bs-slide-to="3" aria-current="false"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner" style="height:75vh " ;>
+                <div class="carousel-item d-block w-100 active">
+                    <img src="carou1.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block text-warning">
+                        <h5>This is Caption</h5>
+                        <p>Other text describing the caption</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="carou2.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-md-block">
+                        <h5>This is Caption</h5>
+                        <p>Other text describing the caption</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="carou3.png" alt="" class="d-block w-100">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>This is Caption</h5>
+                        <p>Other text describing the caption</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="carou4.png" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-md-block">
+                        <h5>This is Caption</h5>
+                        <p>Other text describing the caption</p>
+                    </div>
+                </div>
+            </div>
+            <!-- controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselKo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselKo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">next</span>
+
+            </button>
+        </div>
+    </div>
+
+
+    <!-- end carousel -->
+    <br>
+    <br>
+
+    <!-- Start Accordion and Cards -->
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-warning"
+                        style=" background-color: rgb(128, 0, 0, .9)!important;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Unleash our Collections!
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-dark">
+                        <div class="row">
+                            <!-- Col card 1 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card ">
+                                    <img src="card1.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body " style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the card
+                                            title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 1 -->
+                            <!-- Col card 2 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <img src="card5.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body" style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the card
+                                            title
+                                            and make up the bulk
+                                            of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 2 -->
+                            <!-- Col card 3 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <img src="card6.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body" style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the card
+                                            title
+                                            and make up the bulk
+                                            of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 3 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed text-warning"
+                        style=" background-color: rgb(128, 0, 0, .9)!important;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Unleash our Collections!
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-dark">
+                        <div class="row">
+                            <!-- Col card 1 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <img src="card4.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body" style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the card
+                                            title
+                                            and make up the bulk
+                                            of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 1 -->
+                            <!-- Col card 2 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <img src="card3.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body" style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the card
+                                            title
+                                            and make up the bulk
+                                            of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 2 -->
+                            <!-- Col card 3 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <img src="card6.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body" style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the card
+                                            title
+                                            and make up the bulk
+                                            of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 3 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed text-warning" type="button"
+                        style=" background-color: rgb(128, 0, 0, .9)!important;" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Unleash our Collections!
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-dark">
+                        <div class="row">
+                            <!-- Col card 1 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <img src="card1.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body" style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the card
+                                            title
+                                            and make up the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 1 -->
+                            <!-- Col card 2 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <img src="card5.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body" style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the cand
+                                            make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 2 -->
+                            <!-- Col card 3 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <img src="card3.jpg" class="card-img-top w-100" height="200px" alt="...">
+                                    <div class="card-body" style=" background-color: rgb(128, 0, 0, .8);">
+                                        <h5 class="card-title text-warning">Card title</h5>
+                                        <p class="card-text text-warning">Some quick example text to build on the card
+                                            title
+                                            and make up the bulk
+                                            of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End  Col card 3 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Accordion and Cards -->
+
+
+
+    <br>
+    <br>
+
+    <!-- Card Outside  and Modal 2-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="card1.jpg" class="card-img-top w-100" height="300px" alt="...">
+                    <div class="card-body" style=" background-color: rgb(139, 0, 0, .9);">
+                        <div class="accordion accordion-flush pb-2" id="accordionFlushExample">
+                            <div class="accordion-item ">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Description
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        first item's accordion body.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a type="button" class="btn btn-warning " data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">Know more</a>
+                        <a type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">Buy Now</a>
+                    </div> <!-- end cardbody -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="card4.jpg" class="card-img-top w-100" height="300px" alt="...">
+                    <div class="card-body" style=" background-color: rgb(139, 0, 0, .9);">
+                        <div class="accordion accordion-flush pb-2" id="accordionFlushExample2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Description
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        first item's accordion body.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">Know more</a>
+                        <a type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">Buy Now</a>
+                    </div> <!-- end cardbody -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="card3.jpg" class="card-img-top w-100" height="300px" alt="...">
+                    <div class="card-body" style=" background-color: rgb(139, 0, 0, .9);">
+                        <div class="accordion accordion-flush pb-2" id="accordionFlushExample3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Description
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample3">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        first item's accordion body.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">Know more</a>
+                        <a type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">Buy Now</a>
+                    </div> <!-- end cardbody -->
+                </div>
+            </div>
+        </div>
+        <!-- End Card Outside  and Modal 2-->
+
+        <!-- ---------------START OF MODALS------------------- -->
+
+
+        <!-- Modal Register-->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style=" background-color: rgb(128, 0, 0, .8);">
+                        <h5 class="modal-title text-warning" id="registerModalLabel">Modal
+                            title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style=" background-color: rgb(128, 0, 0, .8);">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-warning">Name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label text-warning">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text text-warning">We'll never share your email with
+                                    anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label text-warning">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style=" background-color: rgb(128, 0, 0, .8);">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#registerSuccess">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2 -->
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Buy NoW</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Big Discount!!!!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-success" href="checkout.html">checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal 2 -->
+        <!-- Modal 3-->
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <img src="card6.jpg" alt="" class="img-rounded px-5 w-100" height="300px">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal 3 -->
+        <!-- Modal 4-->
+
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Testing 4
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal 4-->
+
+    <!-- Modal Sucess Register-->
+
+    <div class="modal fade" id="registerSuccess" tabindex="-1" aria-labelledby="registerSuccessLabel" aria-hidden="true"
+        style=" background-color: rgb(128, 0, 0, .8);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style=" background-color: rgb(128, 0, 0, .8);">
+                    <h5 class="modal-title text-warning" id="registerSuccessLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-warning" style=" background-color: rgb(128, 0, 0, .8);">
+                    CONGRATULATIONS! You are now Registered
+                </div>
+                <div class="modal-footer" style=" background-color: rgb(128, 0, 0, .8);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" href="WD20P_Exercise09_Bolonias.html">DONE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Modal Sucess Register-->
+
+    <!-- Search Modal -->
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style=" background-color: rgb(128, 0, 0, .8);">
+                    <h5 class="modal-title text-warning" id="searchModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style=" background-color: rgb(128, 0, 0, .8);">
+                    <div class="row">
+                        <div class="col text-warning">
+                            <p>Sorry the card collections you are searching is not yet available</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer" style=" background-color: rgb(128, 0, 0, .8);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Modal  -->
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="container-fluid py-5 px-5"
+            style=" background-color: rgb(139, 0, 0, .9); border-top: 4px solid #FDDA0D; ">
+            <p class="text-warning fw-bolder text-center h5">Kodego Bootcamp @Precious Grace F. Bolonias 2022</p>
+        </div>
+    </footer>
+    <!-- CDN Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
